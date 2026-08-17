@@ -2,7 +2,7 @@
 # Trap Under — Monografía Web
 
 ## Descripción del Proyecto
-**Trap Under** es una monografía web interactiva enfocada en el **Trap Hispanoamericano**. El sitio combina una maquetación responsiva con una estética urbana estilo *fanzine / DIY* (recortes, sombras duras y tipografía tipo máquina de escribir), ofreciendo un recorrido visual por los exponentes clave, la cronología histórica del movimiento y una sección de videoteca.
+**Trap Under** es una monografía web interactiva enfocada en el **Trap Hispanoamericano**. El sitio combina una maquetación responsiva con una estética urbana estilo *zine / DIY* (recortes, sombras duras y tipografía tipo máquina de escribir), ofreciendo un recorrido visual por los exponentes clave, la cronología histórica del movimiento y una sección de videoteca.
 
 ## Tecnologías Utilizadas
 * **HTML5:** Estructura semántica de la página.
