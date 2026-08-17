@@ -1,0 +1,111 @@
+/* ==========================================================
+   ESTILOS GENERALES - ESTÉTICA ZINE / FANZINE TRAP
+   ========================================================== */
+
+/* Fondo tono papel periódico o fotocopia antigua */
+body {
+  background-color: #5a738a;
+  color: #111111;
+  font-family: 'Courier New', Courier, monospace; /* Tipografía estilo máquina de escribir */
+}
+
+/* ==========================================================
+   REQUISITO TÉCNICO 1: USO DE 'DISPLAY'
+   ========================================================== */
+
+/* Fondo tipo cinta adhesiva/periódico recortado para títulos */
+h1, h2, h3 {
+  display: inline-block; /* Hace que el fondo negro solo cubra el texto */
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Ajustes con flexbox para centrar elementos */
+.header-fanzine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ==========================================================
+   REQUISITO TÉCNICO 2: USO DE 'POSITION'
+   ========================================================== */
+
+/* El contenedor de la tarjeta debe tener position: relative */
+.zine-card {
+  position: relative; /* Punto de referencia para ubicar sellos */
+  background-color: #ffffff;
+  border: 3px solid #000000 !important;
+  box-shadow: 6px 6px 0px #000000; /* Sombra dura estilo recorte tridimensional */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Efecto de inclinación leve para imitar recorte pegado a mano */
+.zine-card-rotate-left {
+  transform: rotate(-1.5deg);
+}
+
+.zine-card-rotate-right {
+  transform: rotate(1.5deg);
+}
+
+.zine-card:hover {
+  transform: rotate(0deg) scale(1.02); /* Se endereza al pasar el cursor */
+}
+
+/* Sellos estilo "Parental Advisory" usando position: absolute */
+.badge-stamp {
+  position: absolute; /* Se coloca libremente sobre la tarjeta */
+  top: 10px;          /* Separación de 10px desde arriba */
+  right: 10px;         /* Separación de 10px desde la derecha */
+  z-index: 10;         /* Asegura que quede por encima de la imagen */
+  border: 2px solid #000000 !important;
+  box-shadow: 3px 3px 0px #000000;
+  font-family: sans-serif;
+}
+
+/* ==========================================================
+   PERSONALIZACIÓN DE COMPONENTES BOOTSTRAP
+   ========================================================== */
+
+/* 1. Navbar con estilo fotocopia */
+.navbar {
+  border-bottom: 4px solid #000000 !important;
+}
+
+/* 2. Accordion (Línea del tiempo) */
+.accordion-item {
+  border: 3px solid #000000 !important;
+  box-shadow: 5px 5px 0px #000000;
+  margin-bottom: 15px;
+}
+
+.accordion-button {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* 3. Botones estilo parche de concierto */
+.btn-zine {
+  background-color: #ff0055; /* Rosa/Rojo punk neon */
+  color: #ffffff;
+  font-weight: bold;
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px #000000;
+  border-radius: 0;
+}
+
+.btn-zine:hover {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 2px 2px 0px #000000;
+}
