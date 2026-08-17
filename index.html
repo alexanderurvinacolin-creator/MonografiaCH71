@@ -1,35 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrapHispanoamericano</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trap Under</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container my-5">
-  <div class="row">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-uppercase fs-3" href="#">TRAP UNDER</a>
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link text-white text-uppercase" href="#exponentes">Exponentes</a>
+        <a class="nav-link text-white text-uppercase" href="#cronologia">Historia</a>
+      </div>
     </div>
-<nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-3 border-white">
-  <div class="container">
-    <a class="navbar-brand fw-bold fs-3 text-uppercase" href="#">TrapHispanoamericano</a>
-    <div class="navbar-nav ms-auto">
-      <a class="nav-link text-white text-uppercase" href="#pioneros">Pioneros</a>
-      <a class="nav-link text-white text-uppercase" href="#historia">Historia</a>
-      <a class="nav-link text-white text-uppercase" href="#hits">Exitos</a>
+  </nav>
+
+  <header class="container my-5 text-center">
+    <h1 class="display-4">TRAP HISPANOAMERICANO</h1>
+    <p class="mt-3 fs-5 bg-white border border-2 border-dark p-2 d-inline-block">
+      El movimiento urbano que transformó la música en español.
+    </p>
+  </header>
+
+  <section id="exponentes" class="container my-5">
+    <h2 class="mb-4">1. Exponentes Clave</h2>
+    
+    <div class="row g-4">
+
+      <div class="col-12 col-md-4">
+        <div class="card zine-card zine-card-rotate-left rounded-0">
+          
+          <span class="badge bg-danger badge-stamp rounded-0">R. DOMINICANA </span>
+          
+          <img src="assets/papitru.jpg" class="card-img-top rounded-0 border-bottom border-3 border-dark" alt="Papi Trujillo">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-uppercase">Papi Trujillo</h5>
+            <p class="card-text">Artista dominicano que ayudó a popularizar el trap en la región.</p>
+            <a href="#" class="btn btn-zine w-100">Ver Ficha</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card zine-card zine-card-rotate-right rounded-0">
+          <span class="badge bg-warning text-dark badge-stamp rounded-0">PUERTO RICO</span>
+          <img src="assets/anuel.jpg" class="card-img-top rounded-0 border-bottom border-3 border-dark" alt="Anuel AA">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-uppercase">Anuel AA</h5>
+            <p class="card-text">Pionero de la primera ola puertorriqueña de trap en las plataformas digitales.</p>
+            <a href="#" class="btn btn-zine w-100">Ver Ficha</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card zine-card zine-card-rotate-left rounded-0">
+          <span class="badge bg-dark badge-stamp rounded-0">ESPAÑA</span>
+          <img src="assets/yungbeef.jpg" class="card-img-top rounded-0 border-bottom border-3 border-dark" alt="Yung Beef">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-uppercase">Yung Beef</h5>
+            <p class="card-text">Pionero del trap en España y figura clave en la escena urbana del país.</p>
+            <a href="#" class="btn btn-zine w-100">Ver Ficha</a>
+          </div>
+        </div>
+      </div>
+
+    </div> </section>
+
+  <section id="cronologia" class="container my-5">
+    <h2 class="mb-4">2. Línea del Tiempo</h2>
+
+    <div class="accordion rounded-0" id="historiaTrap">
+
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#era1">
+            2016: Los Inicios en Puerto Rico y España
+          </button>
+        </h3>
+        <div id="era1" class="accordion-collapse collapse show" data-bs-parent="#historiaTrap">
+          <div class="accordion-body bg-white border-top border-2 border-dark">
+            Colectivos como Pxxr Gvng o la primer ola puertorriqueña de trap comienzan a ganar popularidad en plataformas digitales, marcando el inicio del movimiento en Hispanoamérica.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#era2">
+            2018: La Explosión Mundial del Trap Hispanoamericano
+          </button>
+        </h3>
+        <div id="era2" class="accordion-collapse collapse" data-bs-parent="#historiaTrap">
+          <div class="accordion-body bg-white border-top border-2 border-dark">
+            Canciones como Na' Nuevo de Anuel AA y colaboraciones como Yung Beef con la 808 Mafia consolidan el trap como un fenómeno global, llevando la música urbana en español a audiencias internacionales.
+          </div>
+          
+        </div>
+      </div>
+<div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#era3">
+            2020: La Cúpula Global y el Dominio en Streaming
+          </button>
+        </h3>
+        <div id="era3" class="accordion-collapse collapse" data-bs-parent="#historiaTrap">
+          <div class="accordion-body bg-white border-top border-2 border-dark">
+            El trap en español rompe récords internacionales en Spotify y YouTube. Los álbumes de estudio se convierten en fenómenos globales y las colaboraciones entre España, Argentina y Puerto Rico dominan las listas.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#era4">
+            2023 - Presente: Fusión, Drill y la Nueva Ola Underground
+          </button>
+        </h3>
+        <div id="era4" class="accordion-collapse collapse" data-bs-parent="#historiaTrap">
+          <div class="accordion-body bg-white border-top border-2 border-dark">
+            Albumbs como el plugg 1, 2 y 3 de Yung Beef y la fusión con géneros como el drill y el reggaetón marcan la nueva era del trap hispanoamericano, consolidando su influencia en la música urbana global.
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</nav>
-<div class="card bg-light border-3 border-dark rounded-0 shadow-lg">
-  <img src="assets/yungbeef.jpg" class="card-img-top rounded-0 border-bottom border-3 border-dark" alt="Yung Beef">
-  <div class="card-body">
-    <h5 class="card-title fw-bold text-uppercase">Yung Beef (España)</h5>
-    <p class="card-text">Pionero del movimiento en Sudamérica a partir del Quinto Escalón y 'Loca'.</p>
-  </div>
-</div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>    
+  </section>
+
+  <footer class="bg-black text-white text-center py-4 mt-5 border-top border-4 border-dark">
+    <p class="mb-0">MONOGRAFÍA — TRAP HISPANOAMERICANO 2026</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
